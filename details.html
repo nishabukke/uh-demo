@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover detailed product information for our range of uniforms. Find the perfect fit for corporate, hospitality, healthcare, and more">
+
+    <link rel="shortcut icon" href="assets/img/flaticon.webp" type="image/x-icon">
 
     <!--=============== FLATICON ===============-->
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
@@ -13,7 +16,53 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Ecommerce Website</title>
+    <title>Uniforms House | Detail of Product</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "How can I check status of my order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Once the product is shipped a shipment confirmatory email would be sent along with the courier tracking details."
+          }
+        },{
+          "@type": "Question",
+          "name": "What are the payment methods at UH?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Credit / Debit Card
+            Net banking
+            Cash on Delivery ( COD )
+            UPI Payments"
+          }
+        },{
+          "@type": "Question",
+          "name": "How do I cancel my order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To cancel your order, please contact our customer support team as soon as possible with your order details. We'll do our best to accommodate your request, but please note that orders already processed or shipped may not be eligible for cancellation. Our team will guide you through the cancellation process and address any concerns you may have."
+          }
+        },{
+          "@type": "Question",
+          "name": "Can you customize uniforms to match our brand identity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer customization services to ensure your uniforms reflect your brand's identity through colors, logos, and designs."
+          }
+        },{
+          "@type": "Question",
+          "name": "Do you offer bulk discounts for large orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we provide competitive pricing and discounts for bulk orders. Get in touch with our sales team to discuss pricing options for your specific needs."
+          }
+        }]
+      }
+      </script>
   </head>
   <body>
     <!--=============== HEADER ===============-->
@@ -21,8 +70,8 @@
       <div class="header__top">
         <div class="header__container container">
           <div class="header__contact">
-            <span>(+01) - 2345 - 6789</span>
-            <span>Our location</span>
+            <span>+91 9923793987</span>
+            <span>Dhankawadi, Pune</span>
           </div>
 
           <p class="header__alert-news">Super Values Deals - Save more with coupons</p>
@@ -33,47 +82,62 @@
 
       <nav class="nav container">
         <a href="index.html" class="nav__logo">
-          <img src="assets/img/logo.png" alt="" class="nav__logo-img">
+          <img src="assets/img/logo.png" alt="logo image" class="nav__logo-img">
         </a>
 
-        <div class="nav__menu" id="nav__menu">
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__menu-top">
+            <a href="index.html" class="nav__menu-logo">
+              <img src="assets/img/logo.png" alt="logo image">
+            </a>
+
+            <div class="nav__close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="shop.html" class="nav__link">Shop</a>
+              <a href="about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="assets/e-brochure.pdf" class="nav__link">E-brochure</a>
             </li>
             <li class="nav__item">
               <a href="accounts.html" class="nav__link">My Account</a>
             </li>
             <li class="nav__item">
-              <a href="login-register.html" class="nav__link">Login</a>
+              <a href="contact.html" class="nav__link">Contact</a>
             </li>
           </ul>
 
           <div class="header__search">
             <input type="text" placeholder="Search for items" class="form__input">
             <button class="search__btn">
-              <img src="assets/img/search.png" alt="">
+              <img src="assets/img/search.png" alt="search icon image">
             </button>
           </div>
         </div>
 
         <div class="header__user-actions">
           <a href="wishlist.html" class="header__action-btn">
-            <img src="assets/img/icon-heart.svg" alt="">
+            <img src="assets/img/icon-heart.svg" alt="heart icon image">
             <span class="count">3</span>
           </a>
           <a href="cart.html" class="header__action-btn">
-            <img src="assets/img/icon-cart.svg" alt="">
+            <img src="assets/img/icon-cart.svg" alt="cart icon image">
             <span class="count">3</span>
           </a>
+
+          <div class="header__action-btn nav__toggle" id="nav-toggle">
+            <img src="assets/img/menu-burger.svg" alt="burger icon image">
+          </div>
         </div>
       </nav>
 
-      
-      <div class="navigation">
+      <div class="navigation container">
         <ul class="navs navbar-nav">
           <li><a href="shop.html">Petrol Pump Uniforms</a></li>
             <li><a href="shop.html">Petrol Pump Accessories</a></li>
@@ -86,7 +150,7 @@
                   </ul>
                 </div>
             </li>
-            <li><a href="#">Custom T-Shirts</span>
+            <li><a href="shop.html">Custom T-Shirts</span>
               </a>
               <div class="dropdown">
                   <ul>
@@ -117,12 +181,12 @@
       <section class="details section--lg">
         <div class="details__container container grid">
           <div class="details__group">
-            <img src="assets/img/demo-1.jpg" alt="" class="details__img">
+            <img src="assets/img/demo-1.jpg" alt="product image" class="details__img">
 
             <div class="details__small-images grid">
-              <img src="assets/img/demo-2.jpg" alt="" class="details__small-img">
-              <img src="assets/img/demo-2.jpg" alt="" class="details__small-img">
-              <img src="assets/img/demo-2.jpg" alt="" class="details__small-img">
+              <img src="assets/img/demo-2.jpg" alt="product image" class="details__small-img">
+              <img src="assets/img/demo-2.jpg" alt="product image" class="details__small-img">
+              <img src="assets/img/demo-2.jpg" alt="product image" class="details__small-img">
             </div>
           </div>
 
@@ -153,21 +217,21 @@
             <div class="details__color flex">
               <span class="details__color-title">Color</span>
               <ul class="color__list">
-                <li><a href="#" class="color__link" style="background-color: hsl(37, 100%, 65%);"></a></li>
-                <li><a href="#" class="color__link" style="background-color: hsl(353, 100%, 67%);"></a></li>
-                <li><a href="#" class="color__link" style="background-color: hsl(49, 100%, 60%);"></a></li>
-                <li><a href="#" class="color__link" style="background-color: hsl(304, 100%, 78%);"></a></li>
-                <li><a href="#" class="color__link" style="background-color: hsl(126, 61%, 52%);"></a></li>
+                <li><span class="color__link"  id="orange" onclick="changeColor('orange')" style="background-color: hsl(37, 100%, 65%);"><span></li>
+                <li><span class="color__link"  id="pink" onclick="changeColor('pink')" style="background-color: hsl(353, 100%, 67%);"><span></li>
+                <li><span class="color__link"  id="yellow" onclick="changeColor('yellow')" style="background-color: hsl(49, 100%, 60%);"><span></li>
+                <li><span class="color__link"  id="lightpink" onclick="changeColor('lightpink')" style="background-color: hsl(304, 100%, 78%);"><span></li>
+                <li><span class="color__link"  id="green" onclick="changeColor('green')" style="background-color: hsl(126, 61%, 52%);"><span></li>
               </ul>
             </div>
 
             <div class="details__size flex">
               <span class="details__size-title">Size</span>
               <ul class="size__list">
-                <li><a href="#" class="size__link">M</a></li>
-                <li><a href="#" class="size__link">L</a></li>
-                <li><a href="#" class="size__link">XL</a></li>
-                <li><a href="#" class="size__link">2XL</a></li>
+                <li><span class="size__link" id="sizeM" onclick="changeSize('sizeM')">M</span></li>
+                <li><span class="size__link" id="sizeL" onclick="changeSize('sizeL')">L</span></li>
+                <li><span class="size__link" id="sizeXL" onclick="changeSize('sizeXL')">XL</span></li>
+                <li><span class="size__link" id="size2XL" onclick="changeSize('size2XL')">2XL</span></li>
               </ul>
             </div>
 
@@ -179,6 +243,24 @@
               <a href="#" class="details__action-btn">
                 <i class="fi fi-rs-heart"></i>
               </a>
+            </div>
+
+            <div class="embroidery">
+              <input type="checkbox" name="embroidery" id="embroideryCheckbox">
+              <span>Interested in Embroidery</span>
+            </div>
+
+            <div class="embroidery-div">
+              <form>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                </div>
+              </form>
+              <div class="embroidery-desc">
+                <p><span class="fw-bold">₹150.00 </span>per embroidery logo charge in a sample order.</p>
+                <p><span class="fw-bold">₹75.00 </span>per Embroidery Logo charge if order 5+.</p>
+                <p><span class="fw-bold">50.00 </span>per Embroidery Logo charge if order 10+.</p>
+              </div>
             </div>
 
             <ul class="details__meta">
@@ -195,6 +277,7 @@
         <div class="detail__tabs">
           <span class="detail__tab active-tab" data-target="#info">Additional Info</span>
           <span class="detail__tab" data-target="#reviews">Reviews(3)</span>
+          <span class="detail__tab" data-target="#qanda">Q & A</span>
         </div>
 
         <div class="details__tabs-content">
@@ -241,7 +324,7 @@
             <div class="reviews__container grid">
               <div class="review__single">
                 <div>
-                  <img src="assets/img/avatar-1.jpg" alt="" class="review__img">
+                  <img src="assets/img/avatar-1.jpg" alt="customer image" class="review__img">
                   <h4 class="review__title">John Doe</h4>
                 </div>
 
@@ -261,7 +344,7 @@
 
               <div class="review__single">
                 <div>
-                  <img src="assets/img/avatar-2.jpg" alt="" class="review__img">
+                  <img src="assets/img/avatar-2.jpg" alt="customer image" class="review__img">
                   <h4 class="review__title">Mack Doe</h4>
                 </div>
 
@@ -281,7 +364,7 @@
 
               <div class="review__single">
                 <div>
-                  <img src="assets/img/avatar-3.jpg" alt="" class="review__img">
+                  <img src="assets/img/avatar-3.jpg" alt="customer image" class="review__img">
                   <h4 class="review__title">John Doe</h4>
                 </div>
 
@@ -325,6 +408,38 @@
               </form>
             </div>
           </div>
+
+          <div class="details__tab-content" id="qanda" content>
+            <button class="accordion">How can I check status of my order?</button>
+            <div class="panel">
+              <p>Once the product is shipped a shipment confirmatory email would be sent along with the courier tracking details.</p>
+            </div>
+
+            <button class="accordion">What are the payment methods at UH?</button>
+            <div class="panel">
+              <p><ul>
+                <li>Credit / Debit Card</li>
+                <li>Net banking</li>
+                <li>Cash on Delivery ( COD )</li>
+                <li>UPI Payments</li>
+              </ul></p>
+            </div>
+
+            <button class="accordion">How do I cancel my order?</button>
+            <div class="panel">
+              <p>To cancel your order, please contact our customer support team as soon as possible with your order details. We'll do our best to accommodate your request, but please note that orders already processed or shipped may not be eligible for cancellation. Our team will guide you through the cancellation process and address any concerns you may have.</p>
+            </div>
+
+            <button class="accordion">Can you customize uniforms to match our brand identity?</button>
+            <div class="panel">
+              <p>Yes, we offer customization services to ensure your uniforms reflect your brand's identity through colors, logos, and designs.</p>
+            </div>
+
+            <button class="accordion">Do you offer bulk discounts for large orders?</button>
+            <div class="panel">
+              <p>Yes, we provide competitive pricing and discounts for bulk orders. Get in touch with our sales team to discuss pricing options for your specific needs.</p>
+            </div>
+          </div>
         </div>
         
       </section>
@@ -337,23 +452,19 @@
           <div class="product__item">
             <div class="product__banner">
               <a href="details.html" class="product__images">
-                <img src="assets/img/demo-2.jpg" alt="" class="product__img default">
+                <img src="assets/img/demo-2.jpg" alt="product image" class="product__img default">
 
-                <img src="assets/img/demo-1.jpg" alt="" class="product__img hover">
+                <img src="assets/img/demo-1.jpg" alt="product image" class="product__img hover">
               </a>
 
               <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
+                    <a href="details.html" class="action__btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
 
-                <a href="#" class="action__btn" aria-label="Add to Wishlist">
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
+                    <a href="wishlist.html" class="action__btn" aria-label="Add to Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
               </div>
 
               <div class="product__badge light-pink">Hot</div>
@@ -385,23 +496,19 @@
           <div class="product__item">
             <div class="product__banner">
               <a href="details.html" class="product__images">
-                <img src="assets/img/demo-2.jpg" alt="" class="product__img default">
+                <img src="assets/img/demo-2.jpg" alt="product image" class="product__img default">
 
-                <img src="assets/img/demo-1.jpg" alt="" class="product__img hover">
+                <img src="assets/img/demo-1.jpg" alt="product image" class="product__img hover">
               </a>
 
               <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
+<a href="details.html" class="action__btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
 
-                <a href="#" class="action__btn" aria-label="Add to Wishlist">
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
+                    <a href="wishlist.html" class="action__btn" aria-label="Add to Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
               </div>
 
               <div class="product__badge light-green">Hot</div>
@@ -433,23 +540,19 @@
           <div class="product__item">
             <div class="product__banner">
               <a href="details.html" class="product__images">
-                <img src="assets/img/product-3-1.jpg" alt="" class="product__img default">
+                <img src="assets/img/product-3-1.jpg" alt="product image" class="product__img default">
 
-                <img src="assets/img/product-3-2.jpg" alt="" class="product__img hover">
+                <img src="assets/img/product-3-2.jpg" alt="product image" class="product__img hover">
               </a>
 
               <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
+<a href="details.html" class="action__btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
 
-                <a href="#" class="action__btn" aria-label="Add to Wishlist">
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
+                    <a href="wishlist.html" class="action__btn" aria-label="Add to Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
               </div>
 
               <div class="product__badge light-orange">Hot</div>
@@ -481,23 +584,19 @@
           <div class="product__item">
             <div class="product__banner">
               <a href="details.html" class="product__images">
-                <img src="assets/img/product-4-1.jpg" alt="" class="product__img default">
+                <img src="assets/img/product-4-1.jpg" alt="product image" class="product__img default">
 
-                <img src="assets/img/product-4-2.jpg" alt="" class="product__img hover">
+                <img src="assets/img/product-4-2.jpg" alt="product image" class="product__img hover">
               </a>
 
               <div class="product__actions">
-                <a href="#" class="action__btn" aria-label="Quick View">
-                  <i class="fi fi-rs-eye"></i>
-                </a>
+<a href="details.html" class="action__btn" aria-label="Quick View">
+                      <i class="fi fi-rs-eye"></i>
+                    </a>
 
-                <a href="#" class="action__btn" aria-label="Add to Wishlist">
-                  <i class="fi fi-rs-heart"></i>
-                </a>
-
-                <a href="#" class="action__btn" aria-label="Compare">
-                  <i class="fi fi-rs-shuffle"></i>
-                </a>
+                    <a href="wishlist.html" class="action__btn" aria-label="Add to Wishlist">
+                      <i class="fi fi-rs-heart"></i>
+                    </a>
               </div>
 
               <div class="product__badge light-blue">Hot</div>
@@ -532,7 +631,7 @@
       <section class="newsletter section">
         <div class="newsletter__container container grid">
           <h3 class="newsletter__title flex">
-            <img src="assets/img/icon-email.svg" alt="" class="newsletter__icon">
+            <img src="assets/img/icon-email.svg" alt="email icon image" class="newsletter__icon">
             Sign up for Newsletter
           </h3>
 
@@ -551,41 +650,32 @@
       <div class="footer__container grid">
         <div class="footer__content">
           <a href="index.html" class="footer__logo">
-            <img src="assets/img/logo.png" alt="" class="footer__logo-img">
+            <img src="assets/img/logo.png" alt="logo image" class="footer__logo-img">
           </a>
 
           <h4 class="footer__subtitle">Contact</h4>
 
           <p class="footer__description">
-            <span>Address: </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, architecto!
+            <span>Address: </span> Office No- C 44,Ground Floor ,KK Market, Satara Road, Dhankawadi, Pune 411043
           </p>
 
           <p class="footer__description">
-            <span>Phone: </span> +12345 67890
+            <span>Phone: </span> +91 9923793987
           </p>
 
           <p class="footer__description">
-            <span>Hours: </span> 10:00 AM - 6:00 PM Mon-Sat
+            <span>Email Us: </span> <a href="mailto: uniformshouse.insignia@gmail.com"> uniformshouse.insignia@gmail.com</a>
           </p>
 
           <div class="footer-social">
             <h4 class="footer__subtitle">Follow Me</h4>
 
             <div class="footer__social-links flex">
-              <a href="">
-                <img src="assets/img/icon-facebook.svg" alt="" class="footer__social-icon">
+              <a href="https://www.facebook.com/uniformshouse1/">
+                <img src="assets/img/icon-facebook.svg" alt="facebook icon image" class="footer__social-icon">
               </a>
-              <a href="">
-                <img src="assets/img/icon-twitter.svg" alt="" class="footer__social-icon">
-              </a>
-              <a href="">
-                <img src="assets/img/icon-instagram.svg" alt="" class="footer__social-icon">
-              </a>
-              <a href="">
-                <img src="assets/img/icon-pinterest.svg" alt="" class="footer__social-icon">
-              </a>
-              <a href="">
-                <img src="assets/img/icon-youtube.svg" alt="" class="footer__social-icon">
+              <a href="https://www.instagram.com/uniforms_house?igsh=ZHlidm5kbW8ya21p">
+                <img src="assets/img/icon-instagram.svg" alt="instagram icon image" class="footer__social-icon">
               </a>
             </div>
           </div>
@@ -595,12 +685,11 @@
           <h3 class="footer__title">Address</h3>
 
           <ul class="footer__links">
-            <li><a href="" class="footer__link">About Us</a></li>
-            <li><a href="" class="footer__link">Delivery Information</a></li>
-            <li><a href="" class="footer__link">Privacy Policy</a></li>
-            <li><a href="" class="footer__link">Terms & Conditions</a></li>
-            <li><a href="" class="footer__link">Contact Us</a></li>
-            <li><a href="" class="footer__link">Support Center</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="privacy-policy.html" class="footer__link">Privacy Policy</a></li>
+            <li><a href="terms-c.html" class="footer__link">Terms & Conditions</a></li>
+            <li><a href="refund-policy.html" class="footer__link">Refund Policy</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
           </ul>
         </div>
 
@@ -608,19 +697,16 @@
           <h3 class="footer__title">My Account</h3>
 
           <ul class="footer__links">
-            <li><a href="" class="footer__link">Sign In</a></li>
-            <li><a href="" class="footer__link">View Cart</a></li>
-            <li><a href="" class="footer__link">My Wishlist</a></li>
-            <li><a href="" class="footer__link">Track My Order</a></li>
-            <li><a href="" class="footer__link">Help</a></li>
-            <li><a href="" class="footer__link">Order</a></li>
+            <li><a href="login-register.html" class="footer__link">Sign In</a></li>
+            <li><a href="cart.html" class="footer__link">View Cart</a></li>
+            <li><a href="wishlist.html" class="footer__link">My Wishlist</a></li>
           </ul>
         </div>
 
         <div class="footer__content">
           <h3 class="footer__title">Secured Payment Gateways</h3>
 
-          <img src="assets/img/payment-method.png" alt="" class="payment__img">
+          <img src="assets/img/payment-method.png" alt="payment methods image" class="payment__img">
         </div>
       </div>
 
